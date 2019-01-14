@@ -1,0 +1,211 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+	z-index: 50;
+	position: relative;
+	background: linear-gradient(to bottom, #d90746, #ea3e2d);
+	height: 898px;
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+	padding-top: 40px;
+}
+
+.logo {
+	font-size: 50px;
+	margin-left: 50px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.header_preview {
+	margin-top: 225px;
+	margin-left: 265px;
+}
+
+.header_title {
+	font-size: 50px;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.header_text {
+	color: white;
+	font-size: 24px;
+	margin-bottom: 110px;
+}
+
+.header_button {
+	font-size: 17px;
+	width: 230px;
+	height: 50px;
+	background-color: white;
+	color: #d90746;
+	border-radius: 25px;
+	padding: 15px 50px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.header_iphone {
+	z-index: 100;
+	position: absolute;
+	object-fit: cover;
+	width: 370px;
+	height: 765px;
+	margin: 200px 0 0 1300px;
+	top: 0;
+}
+
+.header_menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	text-transform: uppercase;
+	justify-content: space-between;
+	width: 420px;
+	color: white;
+}
+
+
+.header_menu > li > a {
+	position: absolute;
+	top: 40px;
+	margin-left: 1250px;
+	font-family: "Lato", sans-serif;
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.conv {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.conv_images {
+	position: relative;
+	margin: 70px 0 70px 200px;
+}
+
+.images_first, .images_second, .images_third {
+	position: absolute;
+	object-fit: cover;
+	width: 300px;
+	height: 535px;
+}
+
+.images_first {
+	top: 0;
+	right: 10px;
+	display: none;
+}
+
+.images_third {
+	top: 0;
+	left: 280px;
+	display: none;
+}
+.conv_text {
+	width: 570px;
+	font-size: 18px;
+}
+
+.conv_title {
+	font-size: 80px;
+	color: black;
+}
+
+.conv_toggle {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 180px;
+	height: 40px;
+	margin-top: 50px;
+	margin-left: 130px;
+}
+
+.toggle1, .toggle2, .toggle3 {
+	display: inline-flex;
+	width: 100px;
+	height: 50px;
+	background: linear-gradient(to bottom, #d90746, #ea3e2d);
+	border-radius: 25%;
+	margin-left: 5px;
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding-left: 18px;
+	padding-top: 8px;
+}
+
+.toggle3:hover {
+	background: linear-gradient(to bottom, #ea3e2d, #d90746);
+	transition: all 1s ease;
+}
+
+.toggle2:hover {
+	background: linear-gradient(to bottom, #ea3e2d, #d90746);
+	transition: all 1s ease;
+}
+
+.toggle1:hover {
+	background: linear-gradient(to bottom, #ea3e2d, #d90746);
+	transition: all 1s ease;
+}
+
+
+
+.slider {
+	width: 500px;
+	height: 3px;
+	margin: 100px auto;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.img {
+	text-align: center;
+	line-height: 300px;
+	position: absolute;
+	font-size: 50px;
+	color: #fff;
+	display: none;
+}
+
+.img.curry {
+	display: block;
+}
+
+
+
+
+

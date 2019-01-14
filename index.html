@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HeyU</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" >
+		$(function () {
+			$('.toggle1').on('click', function() {
+				$('.images_first').slideToggle('fast')
+			})
+			$('.toggle2').on('click', function() {
+				$('.images_second').slideToggle('fast')
+			})
+			$('.toggle3').on('click', function() {
+				$('.images_third').slideToggle('fast')
+			})
+		})
+
+		$(function() {
+    		$('img.animated').hover(
+     			function() {
+      				$(this).addClass('bounce');
+     			},
+     			function() {
+      				$(this).removeClass('bounce');
+     			}
+    	)})
+
+    	$(function() {
+    		$('a.animated').hover(
+     			function() {
+      				$(this).addClass('pulse');
+     			},
+     			function() {
+      				$(this).removeClass('pulse');
+     			}
+    	)})
+
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+	<img src="img/iphone.png" alt="phone" class="header_iphone animated">
+	<header>
+		<div>
+			<a href="#" class="logo">HeyU</a>
+		</div>
+		<div class='header_preview animated pulse'>
+			<h1 class="header_title">Simple, safe<br>
+			and beautiful.</h1>
+			<p class="header_text">With HeyU, you'll get fast, simple, 	secure messaging!</p>
+			<a class="header_button" href="#">Download now</a>
+		</div>
+
+		<nav class="header_menu">
+			<li>
+				<a href="#" class="animated">About</a>
+			</li>
+			<li>
+				<a href="#" class="animated">FAQ</a>
+			</li>
+			<li>
+				<a href="#" class="animated">Support</a>
+			</li>
+			<li>
+				<a href="#" class="animated">Blog</a>
+			</li>
+		</nav>
+	</header>
+	<section class="conv">
+		<div class="conv_images">
+			<img src="img/conversation_front.png" alt="conversation_front" class="images_first">
+			<img src="img/conversation_back.png" alt="conversation_back" class="images_second">
+			<img src="img/conversation_front.png" alt="conversation_front" class="images_third">
+		</div>
+		<div class="conv_text">
+			<h2 class="conv_title">Conversation.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+			ex ea commodo consequat.</p>
+			<ul class="conv_toggle" id='#slide'>
+				<a href="#slide" class='toggle1 animated'>1</a>
+				<a href="#slide" class='toggle2 animated'>2</a>
+				<a href="#slide" class='toggle3 animated'>3</a>
+			</ul>
+		</div>
+	</section>
+</body>
+</html>
